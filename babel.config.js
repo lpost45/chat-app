@@ -1,6 +1,6 @@
-module.exports = {
-    plugins: [
-      'react-native-reanimated/plugin',  // Add this line for Reanimated v2
-    ],
-  };
-  
+module.exports = function (api) {
+	api.cache(true);
+	return {
+		presets: ['babel-preset-expo', '@babel/preset-react'],
+	};
+};
